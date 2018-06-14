@@ -198,12 +198,12 @@ $(document).ready(function(){
 
 </div>
 
-<div class="game">
+<!--<div class="game">
   <script src='game.js'></script>
   <h1>GAME </h1>
   <canvas id="canvas" width="500" height="700"></canvas>
   <h1>PARANOID</h1>
-</div>
+</div>-->
 
 <!--
 <div class="wrap_1">
