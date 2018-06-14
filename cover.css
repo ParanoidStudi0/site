@@ -1,0 +1,926 @@
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 1000px;
+}
+body {
+  text-align: center;
+  color: white;
+
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  /*user-select: none;*/
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+
+
+.masthead-nav > li > a {
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+
+} 
+
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    border-radius: 50px;
+    background: rgba(0,0,0,.5);
+    z-index: 124124;
+  }
+.first {
+  width: 100%;
+  background-color: black;
+  height: 200px;
+}
+.main-content {
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.invisible {
+  width: 100%;
+  height: 73px;
+  background-color: black;
+}
+.header {
+  position: fixed;
+  z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .invisible {
+    height: 0;
+  }
+    .masthead,
+  .mastfoot,
+  .cover-container {
+    border-radius: 0px;
+    background-color: black;
+
+  }
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  /*background-image: url('http://cdn.bloody-disgusting.com/wp-content/uploads/2017/06/Mr.-Robot-Wallpapers.png');*/
+  /*background-image: url('http://imperiya.by/image/xXc7uaS75Bx.jpg');*/
+  background-image: url(images/3.jpg);
+
+}
+.content h1 {
+  padding-top: 75px;
+  text-align: center;
+}
+.main_h1 {
+  font-size: 145%;
+  border-bottom: 5px white solid;
+  border-top: 5px white solid;
+  border-radius: 10px;
+  margin-top: 10%;
+}
+.logo_text_in_first_block {
+  display: flex;
+  justify-content: space-around;
+}
+/*
+.circle {
+  width: 20%;
+  background: black;
+  display: inline-block;
+  border-radius: 100%;
+  margin-left: 10%;
+  margin-top: 3%;
+  border: 1px solid white;
+  float: left;
+  font-family: impact;
+}
+.circle p{
+  display: block;
+  height: 0;
+  margin: 0;
+  padding: 50% 20%;
+}
+.circle p span{
+  display: block;
+  transform: translateY(-50%);
+}
+*/
+.logo {
+  float: left;
+  width: 50%;
+}
+.text_in_first_block {
+  color: white;
+  text-shadow: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  width: 50%;
+}
+@media screen and (max-width: 1100px) {
+.logo_text_in_first_block {
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 100%;
+}
+.main_h1{
+  font-size: 135%;
+}
+}
+@media screen and (max-width: 768px) {
+  .main_h1 {
+    font-size: 95%;
+  }
+} 
+.coding {
+  width: 100%;
+  display: inline-block;
+  margin-top: 10%;
+  background-image: url('http://cdn.bloody-disgusting.com/wp-content/uploads/2017/06/Mr.-Robot-Wallpapers.png');
+}
+.sublime {
+  width: 50%;
+  height: 1000px;
+  float: left;
+  border-radius: 25px;
+}
+.border_ {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #30343F;
+  height: 1000px;
+  border-radius: 25px;
+
+}
+.menu {
+  width: 100%;
+  height: 5%;
+
+}
+.window {
+  background-color: #272822;
+  width: 100%;
+  height: 95%;
+}
+.little_circle {
+  background-color: #CF575C;
+   width:30px;
+ height:30px;
+ display:block;
+ border-radius:15px;
+ -moz-border-radius:15px;
+ -webkit-border-radius:15px;
+ -khtml-border-radius:15px;
+ font-size:20px; color:#fff;
+ line-height:100px;
+ text-align:center;
+ margin:10px;
+ position: absolute;
+}
+.little_circle:hover {
+  background-color: #CF7D80;
+}
+/* 
+Как выравнивать элементы по центру:
+  display: flex;
+  align-items: center
+*/
+.browser {
+  height: 1000px;
+  width: 50%;
+  float: right;
+}
+.browser_window {
+  margin: 0 auto;
+  width: 90%;
+  background-color: #DFDFDF;
+  height: 100%;
+  border-radius: 25px;
+}
+.browser_menu {
+  height: 5%;
+  width: 100%;
+  background-color: #30343F;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+@media screen and (max-width: 768px) {
+  .sublime {
+    width: 100%;
+  }
+  .browser {
+    float: left;
+    width: 100%;
+  }
+}
+.paralax {
+  z-index: 0;
+  background-image: url("images/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+.form {
+  display: inline-block;
+  margin-top: 5%;
+  width: 100%;
+  margin-bottom: 10%;
+  transition: 0.5s;
+}
+.form_in {
+  height: 100%;
+  width: 70%;
+  background-color: white;
+  transition: 0.5s;
+  border-radius: 30px;
+  color: black;
+}
+
+.input_in_form {
+  width: 50%;
+  margin-bottom: 7px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.input_in_form:focus {
+  background-color: white;
+  border: 10px solid white;
+}
+.form_signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form p {
+  font-size: 20px;
+  font-family: inherit;
+
+  transition: 0.3s;
+}
+.form .join {
+  font-family: impact;
+  font-size: 65px;
+}
+hr {
+  height: 2px;
+  background-color: black;
+}
+.form_login {
+  margin-top: 150px;
+}
+li .login_li:hover {
+  color:#9CF28A;
+}
+.button {
+  width: 30%;
+  margin-top: 2%;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    border: 2px solid black;
+    transition: 0.5s;}
+.button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .form_in {
+    width: 100%;
+    border-radius: 0;
+  }
+  .input_in_form {
+    width: 70%;
+  }
+  .button {
+    width: 50%;
+  }
+}
+.tech {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+.html {
+  width: 33%;
+  align-items: center;
+  display: flex;
+  transition: 0.3s;
+  justify-content: center;
+  background-image: url('https://www.mt.nl/wp-content/uploads/2016/11/Code-1076536-780x448.jpg');
+}
+.css {
+  width: 33%;
+  transition: 0.3s;
+  background-image: url('https://assets.wordpress.envato-static.com/uploads/2016/03/Tools-for-Structuring-Optimizing-Your-CSS-Code.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.php {
+  width: 33%;
+  align-items: center;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  background-image: url('https://php-start.com/images/hometask_main.jpg');
+}
+.js {
+  width: 33%;
+  align-items: center;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  background-image: url('https://cdn-images-1.medium.com/max/1600/1*8r6hvv5E-FOOdKOih4G7Hg.jpeg');
+}
+.python {
+  width: 43%;
+  transition: 0.3s;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNZQXIFbcNgVXItVvzZ6TvQO0K4eU6DRiVfv3P3KbF7vtOku7o2w');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.html:hover {
+  width: 45%;
+}
+.css:hover {
+  width: 45%;
+}
+.php:hover {
+  width: 45%;
+}
+.js:hover {
+  width: 45%;
+}
+.python:hover {
+  width: 50%;
+}
+.tech .text_in_tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 40%;
+  font-size: 300%;
+  border: 3px solid white;
+  transition: 0.3s;
+  background-color: #08090B;
+}
+
+@media screen and (max-width: 1250px) {
+  .tech {
+    flex-direction: column;
+    height: 800px;
+  }
+  .html {
+    width: 100%;
+    height: 100%;
+  }
+  .python {
+    width: 100%;
+    height: 100%;
+  }
+  .css {
+    width: 100%;
+    height: 100%;
+  }
+  .php {
+    width: 100%;
+    height: 100%;
+  }
+  .js {
+    width: 100%;
+    height: 100%;    
+  }
+  .tech .text_in_tech {
+    border: 5px solid white;
+    padding: 0;
+    width: 42%;
+    height: 100px;
+  }
+  .html:hover {
+    width: 100%;
+    height: 120%;
+  }
+  .css:hover {
+    width: 100%;
+    height: 120%;
+  }
+  .php:hover {
+    width: 100%;
+    height: 120%;
+  }
+  .js:hover {
+    width: 100%;
+    height: 120%;    
+  }
+  .python:hover {
+    width: 100%;
+    height: 120%;    
+  }
+}
+@media screen and (max-width: 1800px) {
+  .tech .text_in_tech {
+    font-size: 220%;
+  }
+}
+.tech .text_in_tech:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.main_tech {
+  background-image: url(http://blog.flatironschool.com/wp-content/uploads/2013/11/Ruby-and-JavaScript.jpg);
+  width: 100%;
+  margin-top: 7%;  
+}
+/*Классный фонт: http://blog.flatironschool.com/wp-content/uploads/2013/11/Ruby-and-JavaScript.jpg*/
+.port {
+  background-image: url('images/__hello__.jpg');
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.img {
+  width: 50%;
+  transition: 0.5s;
+}
+.img:hover {
+  width: 51%;
+}
+.text_in_port {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ul_in {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 135%;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+@media screen and (max-width: 1100px) {
+  .port {
+    flex-direction: column;
+  }
+  .ul_in {
+    font-size: 95%;
+  }
+
+}
+.main .line {
+    clear: both;
+}
+.main .line div {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 1px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color .5s;
+}
+.main .line div.s {
+    background-color: #bbb;
+    transition: background-color .5s;
+}
+.main .line div.f {
+    background-color: green;
+    transition: background-color 2s;
+}
+.animated {
+  width: 100%;
+  display: flex;
+  height: 95%;
+}
+.wrap {
+  width: 100%;
+  background-color: black;
+}
+.wrap h1 {
+    padding-top: 75px;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #272822;
+  color: white;
+  transition: 0.7s;
+}
+.editor {
+  font-size: 25px;
+  color: #007BFF;
+  margin: 0;
+  padding: 0;
+}
+.content_in_dev{
+  width: 100%;
+  height: 500px;
+  background-image: url(images/code2.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 35px;
+}
+.content_in_dev h1 {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 0;
+}
+.code_editor h1 {
+  padding: 0;
+  padding-left: 2%;
+  float: left;
+  color: white;
+}
+.dev_description {
+  width: 97%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2%;
+  border-left: 5px solid red;
+  padding-left: 15px;
+  margin-bottom: 3%;
+}
+
+.code_editor {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dev_description_things {
+  color: #66D9EF;
+}
+.account {
+  margin-left: 15px;
+  transition: 0.7s;
+  float: right;
+}
+.account_button {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  transition: 0.7s;
+  border: 1px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/*
+.account:hover .account_button{
+  background-color: black;
+  color: white;
+}*/
+.account:active .account_button{
+  background-color: black;
+  color: white;
+}
+.panel_in_account {
+  background-color: white;
+  z-index: 100000000000;
+  position: absolute;
+  transition: 0.3s;
+  height: 0;
+  opacity: 0;
+  margin-top: 2%;
+  border-radius: 10px;
+  color: black;
+  border: 1px solid black;
+}
+.masthead  {
+  z-index: 10000000000;
+}
+.account:hover .panel_in_account {
+  height: 150px;
+  opacity: 1;
+}
+.account:active .panel_in_account {
+  height: 150px;
+  opacity: 1;
+}
+
+/*.masthead,.mastfoot,.cover-container {
+  width: 60%;
+}*/
+.panel_in_account a { 
+  transition: 0.8s;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+#button {
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.chat_window {
+  width: 100%;
+  background-color: white;
+  border: solid 1px black;
+  color: black;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.ch_sp {
+ color: green;
+}
+.fsociety {
+
+}
+.wrap_1{
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+  position: relative;
+  transition: 1s;
+  perspective: 1500px;
+  background-color: black;
+}
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: 1s;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.front {
+  background-image: url(images/0.jpg);
+
+}
+.back {
+  background-image: url(images/Ghostemane.jpg);
+  transform: rotateY(180deg);
+}
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+.card:hover .back {
+  transform: rotateY(360deg);
+}
+.wrap_top_link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.top_link {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  z-index: 123333333333123412;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 1s;
+  opacity: 0;
+  font-weight: bold;
+  -webkit-box-shadow: -4px 2px 201px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 2px 201px 0px rgba(0,0,0,0.75);
+box-shadow: -4px 2px 201px 0px rgba(0,0,0,0.75);
+}
+.top_link a {
+  color: black;
+}
+.chat_form input {
+  border-radius: 5px;
+}
+#button {
+  transition: 0.3s;
+  background-color: white;
+    color: black;
+  border-color: black;
+}
+#button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+  border: none;
+}
+.break {
+  transition: 1s;
+  perspective: 1000px;
+
+}
+.break:hover {
+  transform: rotateY(calc60*3deg);
+}
+.game {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  margin-top: 200px;
+}
+canvas {
+  border: 1px solid white;
+}
