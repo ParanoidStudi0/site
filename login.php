@@ -72,7 +72,7 @@ body {
                   <li class="active"><a href="/">Home</a></li>
                   <?php 
                     if (isset($_SESSION['logged_user']->login)) {
-                      if ($_SESSION['logged_user']->login == 'root') {
+                      if ($_SESSION['logged_user']->root == '1') {
                       ?>
                       <li class="second"><a href="dev.php">For developers</a></li>
                       <?php
@@ -95,9 +95,9 @@ body {
 <hr>
   <form class="form_signup" action="login.php" method="POST">
     <p>Логин:</p>
-    <input type="login" name="login" value="<?php echo @$data['login']; ?>" class="input_in_form" placeholder="Логин..">
+    <input type="login" name="login" value="<?php echo @$data['login']; ?>" class="input_in_form" placeholder="Логин.." style="width: 50%;">
     <p>Пароль:</p>
-    <input type="password" name="password" value="<?php echo @$data['password'];?>" class="input_in_form" placeholder="Пароль..">
+    <input type="password" name="password" value="<?php echo @$data['password'];?>" class="input_in_form" placeholder="Пароль.." style="width: 50%;">
     <button type="submit" name="do_login" class="button" style="margin-bottom: 2%;">Залогиниться </button>
     <a href="index.php">Вернуться на главную</a>
 			<?php

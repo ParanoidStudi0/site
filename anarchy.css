@@ -1,0 +1,44 @@
+* {
+	outline: none;
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+body {
+	background-color: black;
+}
+.wrap{
+	background-color: black;
+	width: 100%;
+}
+.anarchy {
+	width: 100%;
+	display: flex;
+	transition: 0.3s;
+	flex-direction: row;
+	justify-content: center;
+}
+h1 {
+	color: white;
+	font-family: 'roboto';
+	left: -100px;
+}
+.effect {
+	width: 50%;
+	height: 500px;
+	margin: 0 auto;
+	margin-bottom: 500px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-image: url(https://camo.githubusercontent.com/076edd70cc75ad0c830b4b9df33acbd0a859e7a8/68747470733a2f2f61736369696e656d612e6f72672f612f55526a326e7670625970654a794a6534334b6c41535a37667a2e706e67);
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10 {
+background-image: url('https://res.cloudinary.com/teepublic/image/private/s--HyIkznyb--/b_rgb:fffffe,t_Heather%20Preview/c_limit,f_jpg,h_630,q_90,w_630/v1510671984/production/designs/2055930_1.jpg');
+width: 10%;
+border-radius: 10px;
+}
+
+
+/**/
