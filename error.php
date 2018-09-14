@@ -58,9 +58,6 @@
 
           </div>
 </div>
-
-
-
 <!--КОНТЕНТ!-->
 <div class="main-content">
 <div>
@@ -71,7 +68,6 @@ if (isset($_SESSION['logged_user'])) {
   <h1 style="margin-top: 12%; color: white;">У вас нет прав, чтобы просматривать эту страницу</h1>
 
   <?php
-
 } else {
 ?>
 <h1 style="margin-top: 12%; color: white;">Для доступа на эту страницу, пожалуйста, пройдите регистрацию на <a href="/#form">главной</a> странице.</h1>

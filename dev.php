@@ -352,17 +352,6 @@ $user_d = R::find('chat', 'id > ?', array(1));
 
 </script>
 
-<div class="music">
-  <h1>Music.</h1> 
-  <div>
-  <audio controls>
- <source src="/audio/1.mp3">
-
- <p>Ваш браузер не поддерживает аудио</p>
- </audio>
- </div>
-</div>
-
 
 
 
